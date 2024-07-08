@@ -1,3 +1,7 @@
+.navlinks{
+    z-index: 5;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -46,6 +50,7 @@ main{
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0px 4px 15px 0px rgba(162, 162, 162, 0.05);  
+    cursor: pointer;
 }
 .petImg{
     width: 205px;
@@ -66,4 +71,35 @@ main{
 .pet-info p{
     color: var(--black-400);
     font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+    .text-sec{
+        gap: 10px;    
+    }
+    .text-sec h3{
+        font-size: 18px;
+    }
+    .text-sec p{
+        font-size: 14px; 
+    }  
+    .card{
+        width: 200px;
+        padding: 14px 20px;
+        align-items: center;
+    }
+    .petImg{
+        width: 150px;
+        height: 150px;
+    }
+    .pet-info{
+        width: 100%;
+        gap: 10px;
+    }
+    .pet-info span{
+        font-size: 16px;
+    }
+    .pet-info p{
+        font-size: 12px;
+    }
 }
