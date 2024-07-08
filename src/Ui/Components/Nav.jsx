@@ -2,10 +2,10 @@ import '../Styles/Nav.css';
 
 function Nav(){
     return(
-        <nav className='navbar'>
+        < nav className='navbar'>
             <span className="logo">Miaumigo</span>
             <ul className="navlinks">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="#" className="act">Inicio</a></li>
                 <li><a href="#">Adote um amigo</a></li>
                 <li><a href="#">Divulgue um animal</a></li>
                 <li><a href="#">Ajude-nos</a></li>
