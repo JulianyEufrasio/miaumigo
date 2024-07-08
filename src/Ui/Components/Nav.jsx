@@ -3,7 +3,6 @@ import { useState } from 'react';
 import '../Styles/Nav.css';
 
 function Nav(){
-
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
