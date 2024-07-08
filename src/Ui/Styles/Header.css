@@ -72,3 +72,31 @@ header{
     bottom: 0;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 768px){
+    .h-text h2{
+        font-size: 40px;
+    }
+    .h-text p{
+        font-size: 18px;  
+    }
+    .head-text{
+        z-index: 1;
+    }
+    .head-img{
+        z-index: 0;
+    }
+    .head-img img{
+        width: 340px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 20px;
+    }
+    .badge-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .badge-num{
+        font-size: 32px; 
+    }
+}
