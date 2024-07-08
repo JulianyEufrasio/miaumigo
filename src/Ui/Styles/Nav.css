@@ -6,6 +6,7 @@
     width: 100%;
     gap: auto;
     padding: 24px 0;
+    transition: all .3s;
 }
 .navbar .logo{
     font-size: 24px;
@@ -46,4 +47,56 @@
 .btn:hover{
     background-color: var(--red-50);
     color: var(--red-600);
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media screen and (max-width: 990px) {
+
+    .btn{
+        display: none;
+    }
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        gap: 16px;
+        position: absolute;
+        top: 80px;
+        right: 5%;
+        padding: 5%;
+        transition: all .5s;
+        background-color: var(--red-50);
+    }
+
+    .navlinks.show {
+        display: flex;
+        transition: all .3s;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
