@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import '../Styles/Nav.css';
-import '../Scripts/Nav.js';
 
 function Nav(){
 
